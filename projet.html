@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Philosophes des Lumières</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom right, #f1f4ff, #ffffff);
+            color: #222;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(90deg, #1e3a8a, #2563eb);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 0 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            width: 360px;
+            padding: 25px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transition: 0.3s ease;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .card img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #2563eb;
+            margin-bottom: 15px;
+            transition: 0.3s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.05);
+        }
+
+        .card h2 {
+            color: #1e3a8a;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .section {
+            text-align: left;
+            background-color: #f9f9ff;
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 10px;
+            border-left: 4px solid #2563eb;
+        }
+
+        .section h3 {
+            color: #2563eb;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+
+        .section p {
+            font-size: 0.95rem;
+            color: #333;
+            text-align: justify;
+        }
+
+        .section a {
+            display: inline-block;
+            margin-top: 10px;
+            color: white;
+            background: linear-gradient(90deg, #2563eb, #1e40af);
+            padding: 8px 14px;
+            border-radius: 6px;
+            transition: 0.3s ease;
+            text-decoration: none;
+        }
+
+        .section a:hover {
+            background: linear-gradient(90deg, #1e40af, #0f2167);
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            font-size: 0.95rem;
+        }
+
+        footer strong {
+            color: #ffd700;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Les Grands Philosophes des Lumières</h1>
+        <p>Biographie et Philosophie de chaque penseur</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Rousseau -->
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Jean-Jacques_Rousseau_%28painted_portrait%29.jpg"
+                alt="Jean-Jacques Rousseau">
+            <h2>Jean-Jacques Rousseau</h2>
+            <div class="section">
+                <h3>📘 Biographie</h3>
+                <p>
+                    Jean-Jacques Rousseau (1712–1778) est un philosophe genevois naturalisé français.
+                    Il a marqué la pensée politique et éducative moderne. Dans ses ouvrages, il explore la liberté, la
+                    nature humaine et la société.
+                </p>
+            </div>
+            <div class="section">
+                <h3>💡 Philosophie</h3>
+                <p>
+                    Rousseau défend l’idée que l’homme est naturellement bon mais corrompu par la société.
+                    Son œuvre <em>Du contrat social</em> pose les bases de la démocratie moderne.
+                </p>
+                <a href="https://commons.wikimedia.org/wiki/File:Montesquieu_1.png?uselang=fr" target="_blank">Lire sa
+                    philosophie</a>
+            </div>
+        </div>
+
+        <!-- Montesquieu -->
+        <div class="card">
+            <img src="2.png" alt="">
+            <h2>Montesquieu</h2>
+            <div class="section">
+                <h3>📘 Biographie</h3>
+                <p>
+                    Charles-Louis de Montesquieu (1689–1755) était un écrivain et philosophe français.
+                    Ses analyses politiques et sociales ont profondément influencé la constitution des États modernes.
+                </p>
+            </div>
+            <div class="section">
+                <h3>💡 Philosophie</h3>
+                <p>
+                    Dans <em>De l’esprit des lois</em>, il élabore la théorie de la séparation des pouvoirs :
+                    législatif, exécutif et judiciaire, garantissant la liberté politique.
+                </p>
+                <a href="https://fr.wikipedia.org/wiki/Montesquieu" target="_blank">Lire sa philosophie</a>
+            </div>
+        </div>
+
+        <!-- Voltaire -->
+        <div class="card">
+            <img src="3.jpg" alt="Voltaire">
+            <h2>Voltaire</h2>
+            <div class="section">
+                <h3>📘 Biographie</h3>
+                <p>
+                    Voltaire (1694–1778), de son vrai nom François-Marie Arouet, fut un écrivain et philosophe français.
+                    Il a incarné la lutte pour la tolérance et la liberté d’expression contre le fanatisme religieux.
+                </p>
+            </div>
+            <div class="section">
+                <h3>💡 Philosophie</h3>
+                <p>
+                    Voltaire prône la raison, la justice et la tolérance.
+                    Il dénonce les abus du pouvoir et la superstition dans des œuvres comme <em>Candide</em>.
+                </p>
+                <a href="https://fr.wikipedia.org/wiki/Voltaire" target="_blank">Lire sa philosophie</a>
+            </div>
+        </div>
+
+        <!-- Kant -->
+        <div class="card">
+            <img src="4.jpg" alt="Immanuel Kant">
+            <h2>Immanuel Kant</h2>
+            <div class="section">
+                <h3>📘 Biographie</h3>
+                <p>
+                    Immanuel Kant (1724–1804) était un philosophe allemand des Lumières.
+                    Il enseigna à Königsberg et transforma la pensée occidentale par son système critique.
+                </p>
+            </div>
+            <div class="section">
+                <h3>💡 Philosophie</h3>
+                <p>
+                    Dans la <em>Critique de la raison pure</em>, Kant définit les limites de la connaissance humaine.
+                    Il fonde la morale sur la raison et la liberté : "Agis selon la maxime que tu veux voir
+                    universalisée".
+                </p>
+                <a href="https://fr.wikipedia.org/wiki/Immanuel_Kant" target="_blank">Lire sa philosophie</a>
+            </div>
+        </div>
+
+        <!-- d’Alembert -->
+        <div class="card">
+            <img src="5.jpg" alt="Jean le Rond d’Alembert">
+            <h2>Jean le Rond d’Alembert</h2>
+            <div class="section">
+                <h3>📘 Biographie</h3>
+                <p>
+                    Jean le Rond d’Alembert (1717–1783) fut un mathématicien, physicien et philosophe français.
+                    Il est célèbre pour ses travaux scientifiques et son rôle dans l’<em>Encyclopédie</em>.
+                </p>
+            </div>
+            <div class="section">
+                <h3>💡 Philosophie</h3>
+                <p>
+                    d’Alembert prône la rationalité, la méthode scientifique et la diffusion du savoir.
+                    Il croit au progrès de l’humanité par la connaissance.
+                </p>
+                <a href="https://fr.wikipedia.org/wiki/Jean_le_Rond_d%27Alembert" target="_blank">Lire sa
+                    philosophie</a>
+            </div>
+        </div>
+
+        <!-- Diderot -->
+        <div class="card">
+            <img src="7.png" alt="Denis Diderot">
+            <h2>Denis Diderot</h2>
+            <div class="section">
+                <h3>📘 Biographie</h3>
+                <p>
+                    Denis Diderot (1713–1784) était un philosophe, écrivain et encyclopédiste français.
+                    Il est le principal initiateur de l’<em>Encyclopédie</em> qui visait à rassembler toutes les
+                    connaissances humaines.
+                </p>
+            </div>
+            <div class="section">
+                <h3>💡 Philosophie</h3>
+                <p>
+                    Diderot défend la liberté de pensée et l’importance de la raison.
+                    Il croit au progrès moral et scientifique de l’humanité par l’éducation.
+                </p>
+                <a href="https://fr.wikipedia.org/wiki/Denis_Diderot" target="_blank">Lire sa philosophie</a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Mme Sarah loverie</p>
+        <p> Créé avec ❤️ par <strong>Tarek 5tt</strong></p>
+    </footer>
+
+</body>
+
+</html>
